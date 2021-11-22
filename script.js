@@ -5,10 +5,9 @@ function mainFunction(callback) {
   if (check(num1)) {
     num2 = prompt("Enter number2");
     if (check(num2)) {
-      return callback(num1, num2);
+      alert (callback(num1, num2));
     }
   } 
-return;
 }
 
 function check(num) {
@@ -26,29 +25,23 @@ function check(num) {
 }
 
 function exponentiation(num1, num2) {
-  const result = num1 ** num2;
-  alert(`${num1} raised to the power of ${num2} is ${result}`);
-  return result;
+  return num1 ** num2;
 }
 
 function multiplay(num1, num2) {
-  const result = num1 * num2;
-  alert(`${num1} * ${num2} = ${result}`);
-  return result;
+  return num1 * num2;
+
 }
 
 function division(num1, num2) {
-  const result = num1 / num2;
-  alert(`${num1} / ${num2} = ${result}`);
-  return result;
+  return num1 / num2;
+  
 }
 function modulo(num1, num2) {
-  const result = num1 % num2;
-  alert(`Remainder left over ${num1} devided by ${num2} is ${result}`);
-  return result;
+  return num1 % num2;
 }
 
 mainFunction(exponentiation);
-// mainFunction (multiplay);
-// mainFunction (division);
-// mainFunction (modulo);
+mainFunction (multiplay);
+mainFunction (division);
+mainFunction (modulo);
